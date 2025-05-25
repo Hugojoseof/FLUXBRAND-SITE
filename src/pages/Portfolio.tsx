@@ -143,7 +143,7 @@ description: 'Camiseta Informática Matutino IFRN - Desenvolvida especialmente p
     description: 'Camiseta Eletrotécnica – Alta durabilidade e conforto. Estampa voltada para o universo elétrico, perfeita para estudantes e técnicos da área.',
     image: './img/CAMISAS/ELETROTÉCNICA - SP/CAMISA 01/CAMISA ELETROTÉCNICA 01.png',
     variations: [
-      { color: 'Bege', image: './img/CAMISAS/ELETROTÉCNICA - SP/CAMISA 01/CAMISA ELETROTÉCNICA 01.png' },
+      { color: 'Off-White', image: './img/CAMISAS/ELETROTÉCNICA - SP/CAMISA 01/CAMISA ELETROTÉCNICA 01.png' },
       { color: 'Off-White', image: './img/CAMISAS/ELETROTÉCNICA - SP/CAMISA 02/CAMISA ELETROTÉCNICA 02.png' }
     ]
   },
