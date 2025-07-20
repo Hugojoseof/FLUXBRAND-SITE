@@ -226,7 +226,29 @@ description: 'Camiseta Informática Matutino IFRN - Desenvolvida especialmente p
       { color: 'Preta', image: './img/CAMISAS/CAMISA.png' }
     ]
   },
-
+  {
+    id: 24,
+    title: 'Camiseta Direito',
+    category: 'Humanas',
+    description: 'Camiseta Direito – Confortável e estilosa, feita para os apaixonados por leis e justiça. Ótima opção para uso diário ou eventos acadêmicos.',
+    image: './img/CAMISAS/Direito/APRESENTACAO preta.png',
+    variations: [
+      { color: 'Preta', image: './img/CAMISAS/Direito/APRESENTACAO preta.png' },
+      { color: 'Branca', image: './img/CAMISAS/Direito/APRESENTACAO branca.png' }
+    ]
+  },
+  {
+    id: 25,
+    title: 'Camiseta Medicina',
+    category: 'Saúde',
+    description: 'Camiseta Medicina – Confortável e estilosa, feita para os apaixonados por cuidados com a saúde e o corpo humano. Ótima opção para uso diário ou eventos acadêmicos.',
+    image: './img/CAMISAS/Medicina/APRESENTACAO-preta.png',
+    variations: [
+      { color: 'Preta', image: './img/CAMISAS/Medicina/APRESENTACAO-preta.png' },
+      { color: 'Branca', image: './img/CAMISAS/Medicina/APRESENTACAO-branca.png' },
+      { color: 'Verde', image: './img/CAMISAS/Medicina/APRESENTACAO-verde.png' }
+    ]
+  },
 ];
 
 const Portfolio = () => {

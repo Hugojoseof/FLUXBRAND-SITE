@@ -92,6 +92,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, open, onOpenChange
                                          variation.color === 'Preta' ? '#000' : 
                                          variation.color === 'Cinza' ? '#666' :
                                          variation.color === 'Off-White' ? '#FFFFF0' :
+                                         variation.color === 'Verde' ? '#008000' :
                                          variation.color === 'Azul' ? '#0066cc' : '#ccc'
                         }}
                       />

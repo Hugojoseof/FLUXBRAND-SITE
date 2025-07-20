@@ -16,9 +16,9 @@ const shirtsForSale: ProductDetails[] = [
     category: 'Engenharia',
     description: 'Camiseta Engenharia Elétrica – Confortável e estilosa, feita para os apaixonados por circuitos e eletrônica. Ótima opção para uso diário ou eventos acadêmicos.',
     image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/camisa preta eletrica.jpg',
-    price: 'R$ 55,00',
+    price: 'R$ 60,00',
     available: true,
-    orderLink: 'https://forms.example.com/order',
+    orderLink: 'https://forms.gle/QKiupTpLagkKNqZ48',
     variations: [
       { color: 'Preta', image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/camisa preta eletrica.jpg' },
       { color: 'Branca', image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/Camisa branca eletrica.jpg' }
@@ -26,30 +26,31 @@ const shirtsForSale: ProductDetails[] = [
   },
   {
     id: 202,
-    title: 'Camiseta Flux Esporte',
-    category: 'Esporte',
-    description: 'Camiseta Esportiva Flux Brand – Design criativo, tecido leve e ideal para atividades físicas ou uso casual. Destaque-se com estilo.',
-    image: './img/CAMISAS/CAMISA.png',
-    price: 'R$ 70,00',
+    title: 'Camiseta Direito',
+    category: 'Humanas',
+    description: 'Camiseta Direito – Confortável e estilosa, feita para os apaixonados por leis e justiça. Ótima opção para uso diário ou eventos acadêmicos.',
+    image: './img/CAMISAS/Direito/APRESENTACAO preta.png',
+    price: 'R$ 60,00',
     available: true,
-    orderLink: 'https://forms.example.com/order',
+    orderLink: 'https://forms.gle/gCSi15B9dRZcJDo18',
     variations: [
-      { color: 'Preta', image: './img/CAMISAS/CAMISA.png' },
-      { color: 'Preta', image: './img/CAMISAS/CAMISA FLUX.png' }
+      { color: 'Preta', image: './img/CAMISAS/Direito/APRESENTACAO preta.png' },
+      { color: 'Branca', image: './img/CAMISAS/Direito/APRESENTACAO branca.png' }
     ]
   },
   {
     id: 203,
-    title: 'Camiseta Bacharelado em Tecnologia da Informação',
-    category: 'Tecnologia',
-    description: 'Camiseta BTI – Bacharelado em Tecnologia da Informação. Perfeita para quem vive o mundo da tecnologia. Tecido macio, estampa de alta qualidade e excelente para o dia a dia universitário.',
-    image: './img/CAMISAS/BTI/BTI PRETA.jpg',
-    price: 'R$ 55,00',
+    title: 'Camiseta Medicina',
+    category: 'Saúde',
+    description: 'Camiseta Medicina – Confortável e estilosa, feita para os apaixonados por cuidados com a saúde e o corpo humano. Ótima opção para uso diário ou eventos acadêmicos.',
+    image: './img/CAMISAS/Medicina/APRESENTACAO-preta.png',
+    price: 'R$ 60,00',
     available: true,
-    orderLink: 'https://forms.example.com/order',
+    orderLink: 'https://forms.gle/W7VdY2j21ive12pNA',
     variations: [
-      { color: 'Preta', image: './img/CAMISAS/BTI/BTI PRETA.jpg' },
-      { color: 'Branca', image: './img/CAMISAS/BTI/BTI BRANCA.jpg' }
+      { color: 'Preta', image: './img/CAMISAS/Medicina/APRESENTACAO-preta.png' },
+      { color: 'Branca', image: './img/CAMISAS/Medicina/APRESENTACAO-branca.png' },
+      { color: 'Verde', image: './img/CAMISAS/Medicina/APRESENTACAO-verde.png' }
     ]
   },
   {
@@ -60,7 +61,7 @@ const shirtsForSale: ProductDetails[] = [
     image: './img/CAMISAS/ENG. CIVIL - UFRN/APRESENTACAO-CAMISETA.png',
     price: 'R$ 60,00',
     available: true,
-    orderLink: 'https://forms.example.com/order',
+    orderLink: 'https://forms.gle/crTH91gffiLJ2JuY6',
     variations: [
       { color: 'Preta', image: './img/CAMISAS/ENG. CIVIL - UFRN/APRESENTACAO-CAMISETA.png' },
       { color: 'Branca', image: './img/CAMISAS/ENG. CIVIL - UFRN/APRESENTACAO CAMISETA BRANCA.png' }
@@ -142,6 +143,7 @@ const ShirtsForSaleSection: React.FC = () => {
                               backgroundColor: variation.color === 'Branca' ? '#fff' : 
                                              variation.color === 'Preta' ? '#000' : 
                                              variation.color === 'Cinza' ? '#666' :
+                                             variation.color === 'Verde' ? '#008000' :
                                              variation.color === 'Azul' ? '#0066cc' : '#ccc'
                             }}
                             title={variation.color}
