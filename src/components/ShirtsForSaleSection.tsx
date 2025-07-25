@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import ProductModal, { ProductDetails } from './ProductModal';
 import {
   Carousel,
@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ShoppingCart } from 'lucide-react';
 
 const shirtsForSale: ProductDetails[] = [
   {
@@ -15,13 +16,13 @@ const shirtsForSale: ProductDetails[] = [
     title: 'Camiseta Engenharia Elétrica',
     category: 'Engenharia',
     description: 'Camiseta Engenharia Elétrica – Confortável e estilosa, feita para os apaixonados por circuitos e eletrônica. Ótima opção para uso diário ou eventos acadêmicos.',
-    image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/camisa preta eletrica.jpg',
+    image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNpreta.png',
     price: 'R$ 60,00',
     available: true,
     orderLink: 'https://forms.gle/QKiupTpLagkKNqZ48',
     variations: [
-      { color: 'Preta', image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/camisa preta eletrica.jpg' },
-      { color: 'Branca', image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/Camisa branca eletrica.jpg' }
+      { color: 'Preta', image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNpreta.png' },
+      { color: 'Branca', image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNbranca.png' }
     ]
   },
   {
@@ -74,24 +75,27 @@ const ShirtsForSaleSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedVariations, setSelectedVariations] = useState<{[key: number]: number}>({});
 
-  const handleProductClick = (product: ProductDetails) => {
+
+  const handleProductClick = useCallback((product: ProductDetails) => {
     setSelectedProduct(product);
     setIsModalOpen(true);
-  };
+  }, []);
 
-  const handleVariationChange = (productId: number, variationIndex: number) => {
+  const handleVariationChange = useCallback((productId: number, variationIndex: number) => {
     setSelectedVariations(prev => ({
       ...prev,
       [productId]: variationIndex
     }));
-  };
+  }, []);
 
-  const getDisplayImage = (product: ProductDetails) => {
+  const getDisplayImage = useCallback((product: ProductDetails) => {
     if (product.variations && selectedVariations[product.id] !== undefined) {
       return product.variations[selectedVariations[product.id]].image;
     }
     return product.image;
-  };
+  }, [selectedVariations]);
+
+
 
   return (
     <section id="camisas-venda" className="section-padding bg-flux-gray py-20">
@@ -105,71 +109,84 @@ const ShirtsForSaleSection: React.FC = () => {
           </p>
         </div>
 
-        <Carousel className="w-full">
-          <CarouselContent>
-            {shirtsForSale.map((product) => (
-              <CarouselItem key={product.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white hover:shadow-xl transition-all duration-300 h-full">
-                  <div 
-                    className="aspect-square overflow-hidden cursor-pointer"
-                    onClick={() => handleProductClick(product)}
-                  >
-                    <img
-                      src={getDisplayImage(product)}
-                      alt={product.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                    <p className="text-flux-red font-bold mb-3">{product.price}</p>
-                    
-                    {product.variations && (
-                      <div className="flex gap-2 mb-4">
-                        {product.variations.map((variation, index) => (
-                          <button
-                            key={index}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleVariationChange(product.id, index);
-                            }}
-                            className={`w-6 h-6 rounded-full border-2 transition-all duration-300 ${
-                              selectedVariations[product.id] === index 
-                                ? 'border-flux-red scale-110' 
-                                : 'border-gray-300 hover:border-flux-red'
-                            }`}
-                            style={{
-                              backgroundColor: variation.color === 'Branca' ? '#fff' : 
-                                             variation.color === 'Preta' ? '#000' : 
-                                             variation.color === 'Cinza' ? '#666' :
-                                             variation.color === 'Verde' ? '#008000' :
-                                             variation.color === 'Azul' ? '#0066cc' : '#ccc'
-                            }}
-                            title={variation.color}
-                          />
-                        ))}
-                      </div>
-                    )}
-                    
-                    <button 
-                      onClick={() => handleProductClick(product)}
-                      className="w-full bg-flux-red text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-flux-red/80 transition-colors"
-                    >
-                      Comprar agora
-                    </button>
-                  </div>
-                  
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+        <div className="relative">
+          <Carousel 
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: true,
+              skipSnaps: false,
+            }}
+
+          >
+            <CarouselContent>
+              {shirtsForSale.map((product) => (
+                <CarouselItem key={product.id} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="group relative overflow-hidden rounded-lg shadow-lg bg-white hover:shadow-xl transition-all duration-300 h-full">
+                    {/* Badge de disponibilidade */}
+                                      <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
                     DISPONÍVEL
                   </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-0" />
-          <CarouselNext className="right-0" />
-        </Carousel>
+
+                    <div 
+                      className="aspect-square overflow-hidden cursor-pointer"
+                      onClick={() => handleProductClick(product)}
+                    >
+                      <img
+                        src={getDisplayImage(product)}
+                        alt={product.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                    
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2">{product.title}</h3>
+                      <p className="text-flux-red font-bold mb-3">{product.price}</p>
+                      
+                      {product.variations && (
+                        <div className="flex gap-2 mb-4">
+                          {product.variations.map((variation, index) => (
+                            <button
+                              key={index}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleVariationChange(product.id, index);
+                              }}
+                              className={`w-6 h-6 rounded-full border-2 transition-all duration-300 ${
+                                selectedVariations[product.id] === index 
+                                  ? 'border-flux-red scale-110' 
+                                  : 'border-gray-300 hover:border-flux-red'
+                              }`}
+                              style={{
+                                backgroundColor: variation.color === 'Branca' ? '#fff' : 
+                                               variation.color === 'Preta' ? '#000' : 
+                                               variation.color === 'Cinza' ? '#666' :
+                                               variation.color === 'Verde' ? '#008000' :
+                                               variation.color === 'Azul' ? '#0066cc' : '#ccc'
+                              }}
+                              title={variation.color}
+                            />
+                          ))}
+                        </div>
+                      )}
+                      
+                      <button 
+                        onClick={() => handleProductClick(product)}
+                        className="w-full bg-flux-red text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-flux-red/80 transition-colors"
+                      >
+                        Comprar agora
+                      </button>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+
+          </Carousel>
+
+
+        </div>
 
         <ProductModal 
           product={selectedProduct}

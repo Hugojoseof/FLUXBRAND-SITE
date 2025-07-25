@@ -31,10 +31,10 @@ const portfolioItems: ProductDetails[] = [
     title: 'Camiseta Engenharia Elétrica',
     category: 'Engenharia',
     description: 'Camiseta Engenharia Elétrica – Confortável e estilosa, feita para os apaixonados por circuitos e eletrônica. Ótima opção para uso diário ou eventos acadêmicos.',
-    image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/camisa preta eletrica.jpg',
+    image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNpreta.png',
     variations: [
-      { color: 'Preta', image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/camisa preta eletrica.jpg' },
-      { color: 'Branca', image: './img/CAMISAS/ENG. ELÉTRICA/MATERIAL ENGENHARIA ELETRICA/Camisa branca eletrica.jpg' }
+      { color: 'Preta', image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNpreta.png' },
+      { color: 'Branca', image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNbranca.png' }
     ]
   },
   {
