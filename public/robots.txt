@@ -1,14 +1,18 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+Sitemap: https://fluxbrand.com.br/sitemap.xml
+
+# Permitir indexação de imagens
+User-agent: Googlebot-Image
+Allow: /public/img/
+
+# Permitir indexação de CSS e JS
+User-agent: *
+Allow: /src/
+Allow: /public/
+
+# Bloquear arquivos desnecessários
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
