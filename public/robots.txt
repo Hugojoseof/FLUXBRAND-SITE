@@ -5,7 +5,7 @@ Sitemap: https://fluxbrand.com.br/sitemap.xml
 
 # Permitir indexação de imagens
 User-agent: Googlebot-Image
-Allow: /public/img/
+Allow: /img/
 
 # Permitir indexação de CSS e JS
 User-agent: *
@@ -16,3 +16,7 @@ Allow: /public/
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /dist/
+Disallow: /api/
+
+# Crawl-delay para ser respeitoso com o servidor
+Crawl-delay: 1

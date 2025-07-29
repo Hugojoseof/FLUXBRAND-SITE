@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flux Brand | De jovens, para jovens</title>
+    <meta name="description" content="Flux Brand - Camisetas personalizadas para universitários" />
+    <meta name="author" content="Flux Brand" />
+
+    <meta property="og:title" content="Flux Brand | De jovens, para jovens" />
+    <meta property="og:description" content="Flux Brand - Camisetas personalizadas para universitários" />
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="./public/img/logo/chama.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

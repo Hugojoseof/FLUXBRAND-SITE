@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYN9R5SF0J"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag("js", new Date());
-      gtag("config", "G-FYN9R5SF0J");
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Favicon preload -->
-    <link rel="preload" href="/favicon.ico" as="image" type="image/x-icon">
     
     <!-- SEO Meta Tags -->
     <title>Flux Brand | Camisetas Universitárias Personalizadas | De jovens, para jovens</title>
@@ -34,7 +23,7 @@
     <meta property="og:url" content="https://fluxbrand.com.br" />
     <meta property="og:title" content="Flux Brand | Camisetas Universitárias Personalizadas" />
     <meta property="og:description" content="Camisetas personalizadas para universitários. Design exclusivo para Engenharia, Medicina, Direito e mais cursos. Qualidade premium." />
-    <meta property="og:image" content="https://fluxbrand.com.br/img/logo/logo.png" />
+    <meta property="og:image" content="https://fluxbrand.com.br/public/img/logo/logo.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Flux Brand" />
@@ -45,32 +34,13 @@
     <meta property="twitter:url" content="https://fluxbrand.com.br" />
     <meta property="twitter:title" content="Flux Brand | Camisetas Universitárias Personalizadas" />
     <meta property="twitter:description" content="Camisetas personalizadas para universitários. Design exclusivo para Engenharia, Medicina, Direito e mais cursos." />
-    <meta property="twitter:image" content="https://fluxbrand.com.br/img/logo/logo.png" />
+    <meta property="twitter:image" content="https://fluxbrand.com.br/public/img/logo/logo.png" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo/chama.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo/chama.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/img/logo/chama.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/logo/chama.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/img/logo/chama.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/logo/chama.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/logo/chama.png">
-    <link rel="mask-icon" href="/img/logo/chama.png" color="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="/img/logo/chama.png">
-    <meta name="theme-color" content="#000000">
-    
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="./public/img/logo/chama.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/img/logo/chama.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/img/logo/chama.png">
+    <link rel="apple-touch-icon" href="./public/img/logo/chama.png">
     
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,7 +53,7 @@
       "@type": "Organization",
       "name": "Flux Brand",
       "url": "https://fluxbrand.com.br",
-      "logo": "https://fluxbrand.com.br/img/logo/logo.png",
+      "logo": "https://fluxbrand.com.br/public/img/logo/logo.png",
       "description": "Camisetas personalizadas para universitários com design exclusivo",
       "address": {
         "@type": "PostalAddress",
