@@ -40,20 +40,12 @@ export const linksConfig = {
   
   products: [
     {
-      title: "⚡️ Engenharia Elétrica",
-      subtitle: "Camiseta de Engenharia Elétrica",
-      href: "https://forms.gle/UBtwGiSr6TVL5facA",
+      title: "⚡️ Engenharia Energia",
+      subtitle: "Camiseta de Engenharia Energia",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLSf2fVpBUJ6x_gCECn9g4s9Z_tJ51cDzatle_0pEozClXThjsQ/viewform?usp=header",
       icon: "zap",
       color: "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600",
-      badge: "ELÉTRICA"
-    },
-    {
-      title: "🏗️ Engenharia Civil",
-      subtitle: "Camiseta de Engenharia Civil",
-      href: "https://forms.gle/LFDoXrLxntSHRDXq8",
-      icon: "building",
-      color: "bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 hover:from-orange-700 hover:via-orange-600 hover:to-amber-600",
-      badge: "CIVIL"
+      badge: "ENERGIA"
     },
     {
       title: "👩‍⚕️ Medicina",
@@ -62,13 +54,6 @@ export const linksConfig = {
       icon: "heart",
       color: "bg-gradient-to-r from-red-600 via-red-500 to-pink-500 hover:from-red-700 hover:via-red-600 hover:to-pink-600"
     },
-    {
-      title: "⚖️ Direito",
-      subtitle: "Camiseta de Direito",
-      href: "https://forms.gle/vJkzsE13BantdTFT7",
-      icon: "shield",
-      color: "bg-gradient-to-r from-yellow-600 via-yellow-500 to-amber-500 hover:from-yellow-700 hover:via-yellow-600 hover:to-amber-600"
-    }
   ],
   
   footer: {
