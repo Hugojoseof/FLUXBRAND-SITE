@@ -54,6 +54,13 @@ export const linksConfig = {
       icon: "heart",
       color: "bg-gradient-to-r from-red-600 via-red-500 to-pink-500 hover:from-red-700 hover:via-red-600 hover:to-pink-600"
     },
+    {
+      title: "🧪 Química",
+      subtitle: "Camiseta de Química",
+      href: "https://w.app/vitorianaomi",
+      icon: "flask-conical",
+      color: "bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 hover:from-purple-700 hover:via-purple-600 hover:to-pink-600"
+    }
   ],
   
   footer: {
