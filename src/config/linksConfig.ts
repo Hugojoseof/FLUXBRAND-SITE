@@ -60,6 +60,13 @@ export const linksConfig = {
       href: "https://w.app/vitorianaomi",
       icon: "flask-conical",
       color: "bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 hover:from-purple-700 hover:via-purple-600 hover:to-pink-600"
+    },
+    {
+      title: "🔬 Engenharia Biomédica",
+      subtitle: "Camiseta de Engenharia Biomédica",
+      href: "https://forms.gle/yLPbpx5NKDfkarDU7",
+      icon: "flask-conical",
+      color: "bg-gradient-to-r from-green-600 via-green-500 to-pink-500 hover:from-green-700 hover:via-green-600 hover:to-pink-600"
     }
   ],
   
