@@ -39,35 +39,15 @@ export const linksConfig = {
   ],
   
   products: [
-    {
-      title: "⚡️ Engenharia Energia",
-      subtitle: "Camiseta de Engenharia Energia",
-      href: "https://docs.google.com/forms/d/e/1FAIpQLSf2fVpBUJ6x_gCECn9g4s9Z_tJ51cDzatle_0pEozClXThjsQ/viewform?usp=header",
-      icon: "zap",
-      color: "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600",
-      badge: "ENERGIA"
-    },
-    {
-      title: "👩‍⚕️ Medicina",
-      subtitle: "Camiseta de Medicina",
-      href: "https://forms.gle/6xEJAEoHEkBVQ1QG8",
-      icon: "heart",
-      color: "bg-gradient-to-r from-red-600 via-red-500 to-pink-500 hover:from-red-700 hover:via-red-600 hover:to-pink-600"
-    },
-    {
-      title: "🧪 Química",
-      subtitle: "Camiseta de Química",
-      href: "https://w.app/vitorianaomi",
-      icon: "flask-conical",
-      color: "bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 hover:from-purple-700 hover:via-purple-600 hover:to-pink-600"
-    },
-    {
-      title: "🔬 Engenharia Biomédica",
-      subtitle: "Camiseta de Engenharia Biomédica",
-      href: "https://forms.gle/yLPbpx5NKDfkarDU7",
-      icon: "flask-conical",
-      color: "bg-gradient-to-r from-green-600 via-green-500 to-pink-500 hover:from-green-700 hover:via-green-600 hover:to-pink-600"
-    }
+    // {
+    //   title: "⚡️ Engenharia Energia",
+    //   subtitle: "Camiseta de Engenharia Energia",
+    //   href: "https://docs.google.com/forms/d/e/1FAIpQLSf2fVpBUJ6x_gCECn9g4s9Z_tJ51cDzatle_0pEozClXThjsQ/viewform?usp=header",
+    //   icon: "zap",
+    //   color: "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600",
+    //   badge: "ENERGIA"
+    // },
+
   ],
   
   footer: {
