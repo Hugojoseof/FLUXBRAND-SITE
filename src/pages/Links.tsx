@@ -111,7 +111,7 @@ const Links = () => {
         </div>
 
         {/* Produtos */}
-        <div className="mb-8">
+        {/*<div className="mb-8">
           <h2 className="text-white font-medium mb-4 text-center text-base">
             🔥 Nossas Camisetas
           </h2>
