@@ -8,13 +8,13 @@ export const linksConfig = {
   },
   
   socialLinks: [
-    {
-      title: "🌐 Site Oficial",
-      subtitle: "Conheça a Flux Brand",
-      href: "https://fluxbrand.com.br",
-      icon: "external-link",
-      color: "bg-flux-red hover:bg-flux-red/90"
-    },
+    //{
+      //title: "🌐 Site Oficial",
+      //subtitle: "Conheça a Flux Brand",
+      //href: "https://fluxbrand.com.br",
+      //icon: "external-link",
+      //color: "bg-flux-red hover:bg-flux-red/90"
+    //},
     {
       title: "💬 WhatsApp",
       subtitle: "Fale conosco",
