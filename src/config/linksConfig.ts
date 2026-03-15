@@ -39,15 +39,14 @@ export const linksConfig = {
   ],
   
   products: [
-    // {
-    //   title: "⚡️ Engenharia Energia",
-    //   subtitle: "Camiseta de Engenharia Energia",
-    //   href: "https://docs.google.com/forms/d/e/1FAIpQLSf2fVpBUJ6x_gCECn9g4s9Z_tJ51cDzatle_0pEozClXThjsQ/viewform?usp=header",
-    //   icon: "zap",
-    //   color: "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600",
-    //   badge: "ENERGIA"
-    // },
-
+    {
+      title: "⚙️ Engenharia Mecânica",
+      subtitle: "Camiseta de Engenharia Mecânica",
+      href: "https://forms.gle/4YNC7g11xY8rP9mm9",
+      icon: "hammer",
+      color: "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600",
+      badge: "Mecânica"
+    }
   ],
   
   footer: {

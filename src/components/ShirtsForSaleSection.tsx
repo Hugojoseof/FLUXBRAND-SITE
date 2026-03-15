@@ -13,39 +13,23 @@ import { ShoppingCart } from 'lucide-react';
 const shirtsForSale: ProductDetails[] = [
   {
     id: 201,
-    title: 'Camiseta Engenharia Elétrica',
+    title: 'Camiseta Engenharia Mecânica',
     category: 'Engenharia',
-    description: 'Camiseta Engenharia Elétrica – Confortável e estilosa, feita para os apaixonados por circuitos e eletrônica. Ótima opção para uso diário ou eventos acadêmicos.',
-    image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNpreta.png',
-    price: 'R$ 60,00',
+    description: 'Camiseta Engenharia Mecânica – Confortável e estilosa, feita para os apaixonados por mecânica e engenharia. Ótima opção para uso diário ou eventos acadêmicos.',
+    image: './img/CAMISAS/MECÂNICA/mecanicaUFRN.png',
+    price: 'R$ 65,00',
     available: true,
-    orderLink: 'https://forms.gle/QKiupTpLagkKNqZ48',
-    variations: [
-      { color: 'Preta', image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNpreta.png' },
-      { color: 'Branca', image: './img/CAMISAS/ENG. ELÉTRICA/Apresentacao-UFRNbranca.png' }
-    ]
+    orderLink: 'https://forms.gle/4YNC7g11xY8rP9mm9',
+
   },
-  {
-    id: 202,
-    title: 'Camiseta Direito',
-    category: 'Humanas',
-    description: 'Camiseta Direito – Confortável e estilosa, feita para os apaixonados por leis e justiça. Ótima opção para uso diário ou eventos acadêmicos.',
-    image: './img/CAMISAS/Direito/APRESENTACAO preta.png',
-    price: 'R$ 60,00',
-    available: true,
-    orderLink: 'https://forms.gle/gCSi15B9dRZcJDo18',
-    variations: [
-      { color: 'Preta', image: './img/CAMISAS/Direito/APRESENTACAO preta.png' },
-      { color: 'Branca', image: './img/CAMISAS/Direito/APRESENTACAO branca.png' }
-    ]
-  },
+
   {
     id: 203,
     title: 'Camiseta Medicina',
     category: 'Saúde',
     description: 'Camiseta Medicina – Confortável e estilosa, feita para os apaixonados por cuidados com a saúde e o corpo humano. Ótima opção para uso diário ou eventos acadêmicos.',
     image: './img/CAMISAS/Medicina/APRESENTACAO-preta.png',
-    price: 'R$ 60,00',
+    price: 'R$ 70,00',
     available: true,
     orderLink: 'https://forms.gle/W7VdY2j21ive12pNA',
     variations: [
@@ -54,20 +38,7 @@ const shirtsForSale: ProductDetails[] = [
       { color: 'Verde', image: './img/CAMISAS/Medicina/APRESENTACAO-verde.png' }
     ]
   },
-  {
-    id: 204,
-    title: 'Camiseta Engenharia Civil',
-    category: 'Engenharia',
-    description: 'Camiseta Engenharia Civil – Mostre seu orgulho pelo curso com essa peça estilosa e resistente. Estampa temática e tecido ideal para uso diário.',
-    image: './img/CAMISAS/ENG. CIVIL - UFRN/APRESENTACAO-CAMISETA.png',
-    price: 'R$ 60,00',
-    available: true,
-    orderLink: 'https://forms.gle/crTH91gffiLJ2JuY6',
-    variations: [
-      { color: 'Preta', image: './img/CAMISAS/ENG. CIVIL - UFRN/APRESENTACAO-CAMISETA.png' },
-      { color: 'Branca', image: './img/CAMISAS/ENG. CIVIL - UFRN/APRESENTACAO CAMISETA BRANCA.png' }
-    ]
-  },
+
 ];
 
 const ShirtsForSaleSection: React.FC = () => {
