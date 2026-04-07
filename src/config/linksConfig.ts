@@ -46,6 +46,14 @@ export const linksConfig = {
       icon: "hammer",
       color: "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600",
       badge: "Mecânica"
+    },
+    {
+      title: "💻 Bacharelado em Tecnologia da Informação",
+      subtitle: "Camiseta de Bacharelado em Tecnologia da Informação",
+      href: "https://forms.gle/2xDe2Bfndbs45EGB6",
+      icon: "code",
+      color: "bg-gradient-to-r from-purple-600 via-purple-500 to-pink-500 hover:from-purple-700 hover:via-purple-600 hover:to-pink-600",
+      badge: "BTI"
     }
   ],
   

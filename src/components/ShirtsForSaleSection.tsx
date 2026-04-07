@@ -38,6 +38,20 @@ const shirtsForSale: ProductDetails[] = [
       { color: 'Verde', image: './img/CAMISAS/Medicina/APRESENTACAO-verde.png' }
     ]
   },
+  {
+    id: 204,
+    title: 'Camiseta Bacharelado em Tecnologia da Informação',
+    category: 'Tecnologia',
+    description: 'Camiseta BTI – Bacharelado em Tecnologia da Informação. Perfeita para quem vive o mundo da tecnologia. Tecido macio, estampa de alta qualidade e excelente para o dia a dia universitário.',
+    image: './img/CAMISAS/CAMISA BTI 2/CamisaPreta.png',
+    price: 'R$ 60,00',
+    available: true,
+    orderLink: 'https://forms.gle/2xDe2Bfndbs45EGB6',
+    variations: [
+      { color: 'Preta', image: './img/CAMISAS/CAMISA BTI 2/CamisaPreta.png' },
+      { color: 'Branca', image: './img/CAMISAS/CAMISA BTI 2/CamisaBranca.png' }
+    ]
+  }
 
 ];
 
